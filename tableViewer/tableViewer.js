@@ -1,9 +1,5 @@
 $(document).ready(function(){
   
-  /* prevent IE from caching ajax calls */
-  /* http://blogs.ibs.com/Fred.Gohsman/Lists/Posts/Post.aspx?ID=7 */
-  $.ajaxSetup({ cache: false });
-  
   /* set up a global instance of the Boemska h54s adaptor.
       this is used for sending / receiving data from sas.
       source:  https://github.com/Boemska/h54s
