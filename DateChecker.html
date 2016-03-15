@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<style type='text/css'>
+
+ * {text-align:center; font-size:80px;}
+ button {
+  height: 100px;
+  width: 400px;
+  font-size: 48px;
+  }
+
+</style>
+<body>
+
+
+<button onclick="randomDate()">Click for date</button>
+<script type='text/javascript'>
+
+function randomDate(){
+  /* set base date to 1950 (20 years before 0) */
+  var base=new Date(-631152000000)
+  /* date range to test for (years * days * hours * minutes seconds * milliseconds)*/
+  var range=100 * 365.25 * 24 * 60 * 60 * 1000;
+  var newDate=new Date(Math.random()*range)
+  var strDate=newDate.toString();
+  document.getElementById("test").innerHTML =strDate.substring(3,15) ;
+  document.getElementById("result").innerHTML =strDate.substring(0,3) ;
+  document.getElementById("result").style.display = 'none';
+};
+function showDay(){
+  document.getElementById("result").style.display = 'block';
+}
+</script>
+<div id="test" >&nbsp;</div></br>
+<button onclick="showDay()">Click for day</button>
+<div id="result"></div>
+</body>
+</html>
