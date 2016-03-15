@@ -1,0 +1,26 @@
+<!DOCTYPE html>     
+<html lang="en"> 
+<title>Table Viewer</title>
+<link href="../images/editor.ico" type="image/x-icon" rel="shortcut icon" />
+
+<link href="http://handsontable.com/dist/handsontable.full.css" rel="stylesheet" >
+<link href="../css/test.css" rel="stylesheet"/>     
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="http://handsontable.com/dist/handsontable.full.js"></script> 
+<script src=../js/h54s.js></script>     
+<script src=../js/test.js></script>
+
+<img id=imgEditor src="https://pixabay.com/static/uploads/photo/2012/02/23/09/13/telescope-15942_960_720.jpg">
+<br>
+
+<section id="Screen1" >
+<h3>Choose Library: 
+  <select id="selLIB"><option/></select>
+</h3>
+<h3>Choose Table: <select id="selDS"></select></h3>
+<button id="btnDisplay" type="button">Display Table</button>
+</section>
+<section id="Screen2">
+  <div id="Hot" class="hot handsontable htColumnHeaders"></div>
+</section>
